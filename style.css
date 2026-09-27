@@ -1,0 +1,425 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #e63946; /* Merah Sporty */
+    --secondary-color: #1d3557;
+    --bg-dark: #0f1014;
+    --bg-card: #1b1e26;
+    --text-light: #f1f1f1;
+    --text-gray: #a0a0a0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: rgba(15, 16, 20, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-light);
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
+
+.btn-contact {
+    background-color: var(--primary-color);
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.btn-contact:hover {
+    background-color: #c1121f;
+    color: white !important;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ddd;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #25D366; /* Warna WA */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+}
+
+/* SERVICES */
+.services {
+    padding: 5rem 5%;
+    text-align: center;
+}
+
+.services h2, .location h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid #333;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+}
+
+.card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: var(--text-gray);
+}
+
+/* LOCATION */
+.location {
+    padding: 5rem 5%;
+    background-color: #14161a;
+}
+
+.location-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.loc-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.loc-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.loc-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.info-item i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.info-item h4 {
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    color: var(--text-gray);
+}
+
+.btn-map {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 25px;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-map:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    padding: 3rem 5% 1rem;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.socials {
+    margin: 1.5rem 0;
+}
+
+.socials a {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #222;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* MOBILE MENU BURGER */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-light);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* RESPONSIVE MEDIA QUERY */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--bg-card);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        border-left: 1px solid #333;
+    }
+    
+    .nav-links li {
+        opacity: 1;
+        margin: 20px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+/* --- CSS TAMBAHAN UNTUK HALAMAN LAYANAN --- */
+
+/* Header Khusus Halaman */
+.page-header {
+    background-color: #1a1d24;
+    padding: 100px 20px 50px;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.services-detail {
+    padding: 50px 5%;
+    background-color: var(--bg-dark);
+}
+
+.service-block {
+    margin-bottom: 4rem;
+}
+
+.service-block h2 {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 15px;
+}
+
+.service-block p {
+    color: var(--text-gray);
+    margin-bottom: 2rem;
+    max-width: 800px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 3rem 0;
+}
+
+/* GALERI GRID (PENTING UNTUK FOTO) */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    height: 250px; /* Tinggi seragam */
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+/* Mengatur foto agar pas di kotak (tidak gepeng) */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.4s ease;
+}
+
+/* Efek saat mouse diarahkan ke foto */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Teks di atas foto (Overlay) */
+.gallery-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    transform: translateY(0);
+}
+
+/* Mengatur Navbar Link Aktif */
+.nav-links li a.active {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Bagian ini harus dihapus/dikomentari di style.css */
+.keunggulan-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem; /* Ini yang harus dihilangkan */
+}
