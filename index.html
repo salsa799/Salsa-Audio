@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salsa Audio | Spesialis Audio Mobil Premium Jakarta Barat</title>
 
-    <!-- CSS Lokal (Langsung di Root) -->
+    <!-- CSS Utama (Mengacu pada style.css di root) -->
     <link rel="stylesheet" href="style.css">
 
     <!-- CSS External & Font -->
@@ -16,13 +16,15 @@
 </head>
 <body>
 
+    <!-- NAVBAR (NAVIGASI) -->
     <nav class="navbar">
         <div class="logo">SALSA <span>AUDIO</span></div>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="layanan.html">Layanan & Galeri</a></li>
-            <li><a href="reservasi.html">Reservasi</a></li>
-            <li><a href="lokasi.html">Lokasi Kami</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#layanan">Layanan & Galeri</a></li>
+            <li><a href="#reservasi">Reservasi</a></li>
+            <li><a href="#lokasi">Lokasi Kami</a></li>
             <li><a href="#kontak" class="btn-contact">Hubungi Kami</a></li>
         </ul>
         <button class="burger" aria-label="Toggle Navigation Menu">
@@ -32,6 +34,7 @@
         </button>
     </nav>
 
+    <!-- SECTION 1: HOME (HERO) -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Upgrade Suara,<br>Upgrade Rasa.</h1>
@@ -40,27 +43,31 @@
             <a href="https://wa.me/6281282801020" target="_blank" rel="noopener noreferrer" class="cta-button">
                 <i class="fab fa-whatsapp"></i> Konsultasi Gratis
             </a>
-            <a href="reservasi.html" class="cta-button cta-inden">
+            <a href="#reservasi" class="cta-button cta-inden">
                 <i class="fas fa-calendar-check"></i> Reservasi
             </a>
         </div>
     </section>
 
-    <section class="about-us">
+    <!-- SECTION 2: TENTANG KAMI -->
+    <section id="about" class="about-us">
         <div class="container about-content">
             <div class="about-text">
-                <h2>Salsa Audio?</h2>
+                <h2>Tentang Salsa Audio</h2>
                 <p>
-                    Sudah berdiri selama 21 tahun di bidang audio dan aksesoris mobil. Sudah menangani semua jenis mobil dan dikerjakan oleh ahlinya. Spesialis car audio & aksesoris, menyediakan: custom audio, power window, alarm/centralock, android mobil, power audio, dll. Salsa Audio didirikan dengan satu misi: mengubah pengalaman mengemudi standar menjadi perjalanan audio yang imersif. Berlokasi strategis di Pusat Otopart Pasar Segar Kalideres, kami bukan hanya toko, kami adalah partner Anda dalam mencari kesempurnaan suara.
+                    Sudah berdiri selama 21 tahun di bidang audio dan aksesoris mobil. Sudah menangani semua jenis mobil dan dikerjakan oleh ahlinya. Spesialis car audio & aksesoris, menyediakan: custom audio, power window, alarm/centralock, android mobil, power audio, dll.
+                </p>
+                <p>
+                    Salsa Audio didirikan dengan satu misi: mengubah pengalaman mengemudi standar menjadi perjalanan audio yang imersif. Berlokasi strategis di Pusat Otopart Pasar Segar Kalideres, kami bukan hanya toko, kami adalah partner Anda dalam mencari kesempurnaan suara.
                 </p>
                 <p>
                     Kami hanya menggunakan produk berstandar tinggi, didukung teknisi berpengalaman yang ahli dalam instalasi rapi, tuning DSP presisi, hingga pengerjaan custom box & pilar yang detail.
                 </p>
-                <a href="layanan.html" class="btn-secondary">Lihat Detail Pengerjaan</a>
             </div>
         </div>
     </section>
 
+    <!-- SECTION 3: KEUNGGULAN -->
     <section class="keunggulan">
         <div class="container">
             <h2>Pentingnya Audio Mobil Premium</h2>
@@ -83,55 +90,105 @@
         </div>
     </section>
 
-    <!-- SEKTI GALERI MENGGUNAKAN GAMBAR DARI GITHUB -->
-    <section class="quick-links">
+    <!-- SECTION 4: LAYANAN & GALERI -->
+    <section id="layanan" class="quick-links" style="padding: 60px 0;">
         <div class="container">
-            <h2>Galeri & Layanan Utama Kami</h2>
+            <h2>Layanan & Galeri Pengerjaan</h2>
+
+            <!-- Sub-galeri Custom Audio -->
+            <h3 style="margin-top: 30px; margin-bottom: 20px;">Custom Audio & Box</h3>
             <div class="service-grid">
-                
-                <!-- Menggunakan custom-2.jpeg & custom-7.jpg -->
                 <div class="card-link">
                     <img src="custom-2.jpeg" alt="Custom Box Subwoofer" style="width:100%; border-radius:8px; margin-bottom:15px;">
-                    <h3>Custom Box & Pilar</h3>
-                    <p>Pembuatan box subwoofer dan pilar 3-way kosmetik rapi dan presisi.</p>
-                    <a href="layanan.html#custom" class="btn-link">Lihat Galeri <i class="fas fa-arrow-right"></i></a>
+                    <h3>Custom Box Subwoofer</h3>
+                    <p>Pembuatan box subwoofer presisi dan rapi.</p>
                 </div>
-
-                <!-- Menggunakan custom-3.jpeg -->
                 <div class="card-link">
                     <img src="custom-3.jpeg" alt="Tuning DSP Audio" style="width:100%; border-radius:8px; margin-bottom:15px;">
                     <h3>Tuning DSP Presisi</h3>
-                    <p>Setting audio digital (DSP) untuk panggung suara sempurna.</p>
-                    <a href="layanan.html#tuning" class="btn-link">Detail Layanan <i class="fas fa-arrow-right"></i></a>
+                    <p>Setting audio digital untuk panggung suara sempurna.</p>
                 </div>
-
-                <!-- Menggunakan perdam-1.jpeg -->
                 <div class="card-link">
-                    <img src="perdam-1.jpeg" alt="Pemasangan Peredam Mobil" style="width:100%; border-radius:8px; margin-bottom:15px;">
-                    <h3>Pemasangan Peredam</h3>
-                    <p>Meningkatkan kualitas suara dan meredam kebisingan kabin secara maksimal.</p>
-                    <a href="layanan.html#peredam" class="btn-link">Lihat Bukti Kerja <i class="fas fa-arrow-right"></i></a>
+                    <img src="custom-4.jpeg" alt="Pilar 3-Way Presisi" style="width:100%; border-radius:8px; margin-bottom:15px;">
+                    <h3>Pilar 3-Way Presisi</h3>
+                    <p>Pengerjaan pilar kosmetik 3-way dengan hasil rapi.</p>
                 </div>
+                <div class="card-link">
+                    <img src="custom-5.jpeg" alt="Desain Bagasi Audio" style="width:100%; border-radius:8px; margin-bottom:15px;">
+                    <h3>Desain Bagasi Audio</h3>
+                    <p>Penataan power amplifier dan kosmetik bagasi.</p>
+                </div>
+                <div class="card-link">
+                    <img src="custom-6.jpeg" alt="Custom Cosmetik Audio" style="width:100%; border-radius:8px; margin-bottom:15px;">
+                    <h3>Custom Cosmetik Audio</h3>
+                    <p>Estetika audio mobil yang elegan dan modern.</p>
+                </div>
+                <div class="card-link">
+                    <img src="custom-7.jpg" alt="Sistem Audio Premium" style="width:100%; border-radius:8px; margin-bottom:15px;">
+                    <h3>Sistem Audio Premium</h3>
+                    <p>Pengalaman audio kelas atas di dalam mobil Anda.</p>
+                </div>
+            </div>
 
+            <!-- Sub-galeri Peredam -->
+            <h3 style="margin-top: 50px; margin-bottom: 20px;">Pemasangan Peredam Mobil</h3>
+            <div class="service-grid">
+                <div class="card-link">
+                    <img src="perdam-1.jpeg" alt="Peredam Pintu Mobil" style="width:100%; border-radius:8px; margin-bottom:15px;">
+                    <h3>Peredam Pintu Mobil</h3>
+                    <p>Meningkatkan akustik pintu dan kualitas bass.</p>
+                </div>
+                <div class="card-link">
+                    <img src="perdam-2.jpeg" alt="Peredam Lantai Kabin" style="width:100%; border-radius:8px; margin-bottom:15px;">
+                    <h3>Peredam Lantai Kabin</h3>
+                    <p>Meredam suara gesekan roda dan jalanan.</p>
+                </div>
+                <div class="card-link">
+                    <img src="perdam-3.jpeg" alt="Peredam Atap & Bagasi" style="width:100%; border-radius:8px; margin-bottom:15px;">
+                    <h3>Peredam Atap & Bagasi</h3>
+                    <p>Mengurangi suara hujan dan kebisingan kabin.</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- SECTION 5: RESERVASI -->
+    <section id="reservasi" style="padding: 60px 20px; background-color: #f9f9f9;">
+        <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2>Reservasi Pengerjaan</h2>
+            <p style="margin-bottom: 30px;">Jadwalkan kedatangan Anda untuk menghindari antrean di workshop kami.</p>
+
+            <div class="card-link" style="padding: 30px;">
+                <p style="margin-bottom: 20px;">Hubungi kami secara langsung via WhatsApp untuk konsultasi dan booking jadwal:</p>
+                <a href="https://wa.me/6281282801020?text=Halo%20Salsa%20Audio,%20saya%20ingin%20reservasi%20pengerjaan%20audio%20mobil." target="_blank" rel="noopener noreferrer" class="cta-button" style="display: inline-block;">
+                    <i class="fab fa-whatsapp"></i> Reservasi via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: LOKASI KAMI -->
+    <section id="lokasi" style="padding: 60px 20px;">
+        <div class="container" style="text-align: center;">
+            <h2>Lokasi Workshop Kami</h2>
+            <p style="margin-bottom: 30px;">Pusat Otopart Pasar Segar Kalideres, Jakarta Barat.</p>
+
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="cta-button">
+                <i class="fas fa-map-marker-alt"></i> Buka di Google Maps
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER & KONTAK -->
     <footer id="kontak">
         <div class="footer-content">
             <h3>SALSA AUDIO</h3>
             <p>Spesialis Audio Mobil, Head Unit Android, dan Kaca Film di Jakarta Barat.</p>
             
             <div class="socials">
-                <a href="https://www.instagram.com/salsaaudio3" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.tiktok.com/@salsaaudio0" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-                    <i class="fab fa-tiktok"></i>
-                </a>
-                <a href="https://wa.me/6281282801020" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+                <a href="https://www.instagram.com/salsaaudio3" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@salsaaudio0" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://wa.me/6281282801020" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -139,6 +196,7 @@
         </div>
     </footer>
 
+    <!-- SCRIPT NAVIGASI MOBILE -->
     <script>
         const burger = document.querySelector('.burger');
         const nav = document.querySelector('.nav-links');
